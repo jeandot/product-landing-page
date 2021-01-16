@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Product Landing Page</title>
+        <style>
+            body {
+                position: absolute;
+                top: 40px;
+                background-color: black;
+                font-family: Verdana;
+                color: white;
+                text-align: center;
+            }
+            
+            #header {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            h1 {
+                background-color:yellowgreen;
+                max-width: 300px;
+                height: auto;
+                border-radius: 10px;
+                padding: 10px;
+                text-align: center;
+            }
+            #nav-bar {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                position: fixed;
+                top: 0px;
+                width: 100%;
+                margin: auto;
+                background-color: white;
+            }
+            /*unvisited link*/
+            a:link {
+                color: yellowgreen;
+            }
+            /*visited link*/
+            a:visited {
+                color: black;
+            }
+            /*mouse over link*/
+            a:hover {
+                color: pink;
+            }
+            /*selected link*/
+            a:active {
+                color: purple;
+            }
+
+            #video {
+                border-color: white;
+                border-width: 5px;
+                border-style: solid;
+            }
+
+            @media (min-width: 800px) {
+                #header-img {
+                    margin: auto;
+                    width: 600px;
+                    height: 300px;
+                    text-align: center;
+                }
+            }
+            </style>
+    </head>
+    <body>
+        <header id="header">
+            <img id="header-img" style="margin: auto;" src="images/shake-shack-logo.png" alt="Shake Shack Logo" width= 500px height= 250px>
+        <br>
+        <nav id="nav-bar" class=".nav-link" width= auto style="margin: auto;">
+            <a href="#story">Our Story</a></li>
+            <a href="#menu">Our Menu</a></li>
+            <a href="#locations">Locations</a></li>   
+        </nav>
+        </header>
+        <main>
+            <section id="story">
+                <h1 style="margin: auto;">Our Story</h1>
+                <article>
+                    <p>Shake Shack sprouted from a hot dog cart in Madison Square Park in Manhattan to support the Madison Square Park Conservancy’s first art installation. The cart was quite the success, with Shack fans lined up daily for three summers.</p>
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/HbDQ7n6xIPM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </article>
+            </section>
+            <br>
+            <section id="menu">
+                <h1 style="margin: auto;">Our Menu</h1>
+                <article>
+                    <p>Shake Shack's shakes have been reviewed as "some of the best in the industry. It also sells chicken burgers, fries, hot dogs, frozen custards, and beer and wine. In each new location, the beverage menu is customized to the local flavors of the city in which it operates. Their most famous product is the ShackBurger. Available in single or double, it contains a beef patty, American cheese, lettuce, tomato and a proprietary sauce.</p>
+                </article>
+            </section>
+            <br>
+            <section id="locations">
+                <h1 style="margin: auto;">Locations</h1>
+                <article>
+                    <p>Today, there are 275 Shake Shack locations throughout the world.</p>
+                </article>
+            </section>
+            <br>
+        </main>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label for="email">Join our mailing list today!</label>
+            <br>
+            <br>
+            <input id="email" type="email" size=50px  placeholder="Please enter your email address" required>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </body>
+</html>
